@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "parciallabo-de730": {
+      "hosting": {
+        "PrimerParcialLabo": [
+          "parciallabo-de730"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "parciallabo-de730"
+  }
+}

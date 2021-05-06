@@ -12,7 +12,8 @@ export class ABMContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.token = localStorage.getItem('token');
-    if (this.token != 'admind@admin.com') {
+    console.log(this.token)
+    if (this.token != 'admin@admin.com') {
       this.router.navigateByUrl("login");
     }
   }

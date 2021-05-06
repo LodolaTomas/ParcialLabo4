@@ -3,15 +3,24 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" routerLink='/login'>Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" routerLink='/altaProducto'>Alta Producto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Disabled</a>
+          <a class="nav-link" routerLink='/productoDetalle'>Detalle Producto</a>
         </li>
       </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-lg fnt"
+          (click)="Deslogearse()"
+        >
+          Logout
+        </button>
+      </form>
     </div>
   </nav>
   <router-outlet></router-outlet>

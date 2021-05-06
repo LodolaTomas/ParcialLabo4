@@ -13,6 +13,7 @@ import { ListadoPaisesComponent } from './componentes/listado-paises/listado-pai
 import { ProductoDetalleComponent } from './componentes/producto-detalle/producto-detalle.component';
 import { ListadoProductoComponent } from './componentes/listado-producto/listado-producto.component';
 import { DetalleProductoComponent } from './componentes/detalle-producto/detalle-producto.component';
+import { ABMContainerComponent } from './componentes/abmcontainer/abmcontainer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetalleProductoComponent } from './componentes/detalle-producto/detalle
     ListadoPaisesComponent,
     ProductoDetalleComponent,
     ListadoProductoComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    ABMContainerComponent
   ],
   imports: [  
     BrowserModule,

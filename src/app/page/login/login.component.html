@@ -45,11 +45,14 @@
           </div>
         </div>
     
-        <button type="submit"  class="btn btn-primary" [disabled]="userForm.invalid">
+        <button type="submit"  class="btn btn-primary btn-block" [disabled]="userForm.invalid">
           Submit
         </button>
-        <button type="button" class="btn btn-primary" (click)="LoginRapido()">
-          InicioRapido
+        <button type="button" class="btn btn-primary btn-block" (click)="LoginAdmin()">
+          Inicio Admin
+        </button>
+        <button type="button" class="btn btn-primary btn-block" (click)="LoginEmpleado()">
+          Inicio empleado
         </button>
       </fieldset>
     </form>

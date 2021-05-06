@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { on } from 'events';
 import { usuario } from 'src/app/clases/Usuario';
 import { UsuarioService } from 'src/app/servicio/usuario.service';
 
@@ -42,13 +43,18 @@ export class LoginComponent implements OnInit {
           }
         });
     
-  }
-  
-  public LoginRapido() {
+  } 
+  public LoginAdmin() {
     this.userForm.value.password = 'admin';
-    this.userForm.value.email= "adimin@admin.com";
+    this.userForm.value.email = 'admin@admin.com';
     this.onLogin();
   }
+  LoginEmpleado(){
+    this.userForm.value.email = "empleado@empleado.com";
+    this.userForm.value.password  = 'empleado';
+    this.onLogin();
+  }
+  
   isValidField(field: string): string {
     const validateField = this.userForm.get(field);
     return !validateField.valid && validateField.touched

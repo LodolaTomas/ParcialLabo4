@@ -15,7 +15,7 @@
             <td>{{producto.descripcion}}</td>
             <td>{{producto.precio}}</td>
             <td>{{producto.stock}}</td>
-            <td>Es Comestible?: <div *ngIf="producto.comestible">Si</div> <div *ngIf="producto.comestible==false">No</div></td>
+            <td><div *ngIf="producto.comestible">Si</div> <div *ngIf="producto.comestible==false">No</div></td>
             <td><img [src]="producto.paisDeOrigen.flag" class="img-thumbnail" width="80px" height="50px"></td>
         </tr>
     </tbody>

@@ -1,1 +1,22 @@
-<p>listado-producto works!</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">precio</th>
+            <th scope="col">stock</th>
+            <th scope="col">comestible</th>
+            <th scope="col">Pais De Origen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of listaProductos" (click)="selectProducto(producto)"  >
+            <th scope="row">{{producto.codigo}}</th>
+            <td>{{producto.descripcion}}</td>
+            <td>{{producto.precio}}</td>
+            <td>{{producto.stock}}</td>
+            <td>Es Comestible?: <div *ngIf="producto.comestible">Si</div> <div *ngIf="producto.comestible==false">No</div></td>
+            <td><img [src]="producto.paisDeOrigen.flag" class="img-thumbnail" width="80px" height="50px"></td>
+        </tr>
+    </tbody>
+</table>

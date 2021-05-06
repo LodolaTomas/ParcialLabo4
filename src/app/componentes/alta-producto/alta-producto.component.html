@@ -29,7 +29,18 @@
                                 Valid precio Producto is required.
                             </div>
                         </div>
-
+                        <div class="col-12">
+                            <br>
+                            <br>
+                            <label for="descripcion" class="form-label">Descripcion</label>
+                            <div class="input-group has-validation">
+                                <input type="number" class="form-control" id="descripcion" placeholder="Descripcion" name="sotck"
+                                    required [(ngModel)]="unProducto.descripcion" />
+                                <div class="invalid-feedback">
+                                    Valid descripcion Producto is required.
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <br>
                             <br>

@@ -39,7 +39,6 @@ export class AltaProductoComponent implements OnInit {
       this.unProducto.comestible=false;
     }
     this.srvProducto.Crear(this.unProducto);
-    this.unProducto=null;
   }
 
 

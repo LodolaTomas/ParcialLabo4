@@ -1,0 +1,9 @@
+<div class="card h-100"  *ngIf="detalleProducto!=null">
+    <img src="{{detalleProducto.paisDeorigen.flag}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Codigo: {{detalleProducto.codigo}}</h5>
+      <p class="card-text">Stock:{{detalleProducto.stock}}</p>
+      <p class="card-text">Precio: ${{detalleProducto.precio}}</p>
+      <p class="card-text">Descripcion: ${{detalleProducto.descripcion}}</p>
+    </div>
+  </div>

@@ -21,6 +21,7 @@ export class ProductoService {
   }
 
   Crear(producto: Producto): any {
+    console.log('creado')
     return this.referenciaAlaColeccion.add({ ...producto });
   }
   public TraerTodos() {

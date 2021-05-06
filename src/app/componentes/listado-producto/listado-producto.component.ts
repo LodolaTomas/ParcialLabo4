@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ProductoService } from 'src/app/servicio/producto.service';
 
 @Component({
   selector: 'app-listado-producto',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoProductoComponent implements OnInit {
 
-  constructor() { }
+  public listaProductos: any[];
+  
+  @Output() productoSeleccionado: EventEmitter<any> = new EventEmitter<any>();
+
+  constructor(private productoService: ProductoService) {
+    this.listaProductos=this.productoService.TraerTodos();
+  }
 
   ngOnInit(): void {
+  }
+
+  selectProducto(producto) {
+    this.productoSeleccionado.emit(producto);
   }
 
 }

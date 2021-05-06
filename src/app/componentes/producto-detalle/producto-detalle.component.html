@@ -1,1 +1,15 @@
-<p>producto-detalle works!</p>
+<div class="jumbotron">
+    <div class="container">
+      <app-listado-producto (productoSeleccionado)="getProductoSelected($event)"></app-listado-producto>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <app-detalle-producto [detalleProducto]='producto'></app-detalle-producto>
+      </div>
+    </div>
+    <hr>
+
+  </div>
